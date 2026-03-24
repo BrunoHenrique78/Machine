@@ -1,1 +1,3 @@
-# Machine
+Descrição da Machine:
+
+A Supernatural Machine é uma calculadora simples que eu fiz usando HTML, CSS e JavaScript. A ideia dele é pegar um número decimal, que o usuário digita e transformar esse número em outros formatos, como: binário, octal e hexadecimal. O funcionamento é bem direto, a pessoa digita um número no campo e clica no botão “Exorcizar”. Depois disso, o sistema mostra na tela o mesmo número convertido nos outros sistemas numéricos. A parte de programação foi feita em JavaScript, para fazer as conversões. Já o visual foi feito com CSS, com um tema mais escuro e inspirado em algo sobrenatural, pra deixar o site mais diferente e interessante.
