@@ -1,0 +1,83 @@
+<!-- Criado por Marise Miranda | 2017.1 -->
+<!-- Adaptado por Matheus Matos | 2025.1 -->
+<!-- Adaptado por Bruno Henrique Zambianco Tita | 2026.3 -->
+
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exorcize Machine</title>
+
+    <style>
+        .caixa {
+            width: 500px;
+            margin: auto;
+            margin-top: 50px;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.795);
+            color: rgb(255, 255, 255);
+            border-radius: 15px;
+            text-align: center;
+}
+
+        .cruz {
+            width: 80px;
+            margin-top: 10px;
+}
+</style>
+
+</head>
+
+<body style="background-image: url('fundo_machine.jpg'); background-size: cover;"> <!-- background-size: cover;" ele faz com que a imagem ocupe a tela toda -->
+    <div class="caixa">
+        
+        <p>
+        
+        <h1>Supernatural Machine</h1>
+        <h2>Exorcize o seu número</h2>
+        <img src="simbolo_supernatural.png" class="cruz">
+        
+        <p>
+        
+        <h2>Digite um número decimal:</h2>
+        <input id="demo1" type="text" placeholder="Coloque um número:">
+        
+        <p>
+
+        <button onclick="exorcizar()">Exorcizar</button>
+
+        <p>
+
+        <h2>Resultados:</h2>
+        
+        <p>
+
+        <h3>Octal:</h3>
+        <div id="demo2"></div>
+        
+        <p>
+        
+        <h3>Hexadecimal:</h3>
+        <div id="demo3"></div>
+        
+        <p>
+        
+        <h3>Binário:</h3>
+        <div id="demo4"></div>
+
+    </div>
+
+    <script>
+        function exorcizar() {
+            var decimal = Number(demo1.value);
+
+            demo2.innerHTML = `<h4>${decimal.toString(8)}</h4>`;
+            demo3.innerHTML = `<h4>${decimal.toString(16)}</h4>`;
+            demo4.innerHTML = `<h4>${decimal.toString(2)}</h4>`;
+        }
+    </script>
+</body>
+
+</html>
